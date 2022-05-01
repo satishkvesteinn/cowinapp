@@ -395,6 +395,10 @@
     background: inherit !important;
 }
 
+.date-crousel .react-multiple-carousel__arrow{
+    display: none !important;
+}
+
 .react-multiple-carousel__arrow::before {
     color: var(--navcolor) !important;
 }

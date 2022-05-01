@@ -294,7 +294,7 @@ function VaccinationCenter() {
         }
     }
 
-    console.log(center);
+    // console.log(center);
     var newarr1 = [];
     
     function hello() {
@@ -331,7 +331,7 @@ function VaccinationCenter() {
             return (element)
         })
 
-        console.log(newcenterid);
+        // console.log(newcenterid);
         // console.log(hel);
         // console.log(center);
         // console.log(newarr1);
@@ -477,45 +477,6 @@ function VaccinationCenter() {
                                 } */}
                                 <div className='vaccine'>
                                     {
-                                        // center.length > 0 ?
-                                        //     center.map((item) => {
-                                        //         return (
-                                        //             <div className='vaccine-details' key={item.center_id}>
-                                        //                 <div className='vaccine-address'>
-                                        //                     <h6>{item.name}</h6>
-                                        //                     <p>{item.address}, {item.district_name}, {item.state_name}, {item.pincode}</p>
-                                        //                     {/* {console.log(item.sessions[0])} */}
-                                        //                     <h5>{item.sessions[0].vaccine}<span>{item.fee_type}</span></h5>
-                                        //                     <p className='age'>age: {item.sessions[0].min_age_limit} - {item.sessions[0].max_age_limit} </p>
-                                        //                 </div>
-                                        //                 <Carousel id="slotscrouselbtn" className='date-crousel' responsive={responsive} infinite={false} shouldResetAutoplay={false}>
-                                        //                     {
-                                        //                         item.sessions.map((data, index) => {
-                                        //                             return (
-                                        //                                 <div key={data.session_id}>
-                                        //                                     <div className='slots'><span className='dosename'>#1Dose | </span>
-                                        //                                         {
-                                        //                                             data.available_capacity_dose1 > 0 ? <span className='slot'>{data.available_capacity_dose1} Slots</span> : <span className='bookedslot'>Booked</span>
-                                        //                                         }
-                                        //                                     </div>
-                                        //                                     <div className='slots'><span className='dosename'>#2Dose | </span>
-                                        //                                         {
-                                        //                                             data.available_capacity_dose2 > 0 ? <span className='slot'>{data.available_capacity_dose2} Slots</span> : <span className='bookedslot'>Booked</span>
-                                        //                                         }
-                                        //                                     </div>
-                                        //                                 </div>
-                                        //                             )
-                                        //                         })
-                                        //                     }
-                                        //                 </Carousel>
-                                        //             </div>
-                                        //         )
-                                        //     })
-                                        //     :
-                                        //     <h6 style={{ textAlign: center }}>No vaccination center are availabile on this time</h6>
-
-
-
                                         center.length > 0 ?
                                             center.map((item) => {
                                                 return (
@@ -523,7 +484,6 @@ function VaccinationCenter() {
                                                         <div className='vaccine-address'>
                                                             <h6>{item.name}</h6>
                                                             <p>{item.address}, {item.district_name}, {item.state_name}, {item.pincode}</p>
-                                                            {/* {console.log(item.sessions[0])} */}
                                                             <h5>{item.sessions[0].vaccine}<span>{item.fee_type}</span></h5>
                                                             <p className='age'>age: {item.sessions[0].min_age_limit} - {item.sessions[0].max_age_limit} </p>
                                                         </div>
