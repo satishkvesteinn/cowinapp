@@ -1,0 +1,15 @@
+:root {
+  --navcolor: #017e7e;
+  --navhover: #006262;
+  --linnercolor: #04a9a9;
+  --paracolor: rgb(111, 110, 110);
+}
+
+
+body {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+

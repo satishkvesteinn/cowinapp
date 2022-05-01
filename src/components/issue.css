@@ -1,0 +1,101 @@
+.issue-section{
+    min-height: 200px;
+    padding: 20px 0px;
+    background-color: var(--navcolor);
+}
+
+.issue-section .crousel-container{
+    margin: 0px auto;
+    max-width: 1000px;
+    width: 100%;
+}
+
+
+.issue-section .crousel-container .carsoual{
+    height: 100% !important;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 10px 20px;
+    margin: 0px 10px;
+}
+
+
+.issue-section .crousel-container .carsoual a{
+    margin-bottom: 7px;
+    text-align: center;
+    display: block;
+    color: var(--navcolor);
+    font-size: .75rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.issue-section .crousel-container .carsoual a:hover{
+    text-decoration: underline;
+}
+
+.issue-section .crousel-container .carsoual p{
+    padding: 0px;
+    text-align: center;
+    display: block;
+    font-size: .66rem;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.issue-container{
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+
+}
+
+.issue-container h5{
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1;
+    text-align: center;
+}
+
+.issue-paragraph-container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0px auto;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+.issue-paragraph-container p{
+    margin: 0px;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+.issue-button-container{
+    position:  absolute;
+    top: 0;
+    right: 10px;
+}
+
+.issue-button-container button{
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 4px;
+    padding: 3px 8px;
+    margin-left: 10px;
+    border: 1px solid #fff;
+    background-color: initial;
+}
+/* .issue-section .crousel-container .react-multiple-carousel__arrow{
+    border: 1px solid var(--navcolor);
+    border-radius: 3px;
+    padding: 0px !important;
+    font-size: .8rem !important;
+    background-color: #fff !important;
+} */

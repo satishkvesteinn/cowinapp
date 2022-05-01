@@ -1,0 +1,515 @@
+.search-container {
+    min-height: 200px;
+    background-color: #fff;
+    padding: 30px 0px;
+    text-align: center;
+}
+
+.search-container h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--navcolor);
+}
+
+.search-container .nearest-center-paragaph {
+    margin-bottom: .4rem;
+    font-size: .75rem;
+}
+
+.search-container .bookyourslot {
+    text-decoration: none;
+    font-size: .9rem;
+    font-weight: 500;
+    color: var(--navcolor);
+}
+
+.search-container .avaliablty {
+    justify-content: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+}
+
+.search-container .avaliablty .searchArea {
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.search-container .avaliablty .searchArea::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0%;
+    opacity: 0.5;
+    width: 100%;
+    border-bottom: 3px solid rgb(195, 194, 194);
+}
+
+.search-container .avaliablty .searchArea span {
+    cursor: context-menu;
+    letter-spacing: 1;
+    position: relative;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--navcolor);
+    padding: 10px 0px;
+}
+
+.search-container .avaliablty .searchArea .active::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0%;
+    opacity: 1;
+    width: 100%;
+    border-bottom: 3px solid var(--navcolor);
+}
+
+.search-container .show {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.search-container .searchSection {
+    align-items: baseline;
+    display: grid;
+    max-width: 700px;
+    width: 100%;
+    grid-gap: 15px;
+    justify-content: center;
+    margin: 20px auto;
+    grid-template-columns: 2fr 2fr 1fr;
+}
+
+.search-container .searchSection1 {
+    align-items: baseline;
+    display: grid;
+    grid-gap: 15px;
+    max-width: 500px;
+    width: 100%;
+    justify-content: center;
+    margin: 20px auto;
+    grid-template-columns: 2fr 1fr;
+}
+
+.search-container .hide {
+    display: none;
+}
+
+.search-container .searchSection .states-container {
+    position: relative;
+    width: 100%;
+}
+
+.search-container .searchSection .statedistrictdata,
+.search-container .searchSection input[type=search] {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    color: var(--navcolor);
+    outline: none;
+    font-size: .85rem;
+    border-radius: 30px;
+    border: 1px solid grey;
+}
+
+.search-container .searchSection .statedistrictdata {
+    cursor: pointer;
+    margin: 0px auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.dropdownIcon {
+    align-self: center;
+    font-size: .6567rem;
+}
+
+/* width */
+.search-container .searchSection .allstatedistrictdata::-webkit-scrollbar,
+.vaccine-main-conatiner::-webkit-scrollbar,.cowinnew-content-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.search-container .searchSection .allstatedistrictdata::-webkit-scrollbar-track,
+.vaccine-main-conatiner::-webkit-scrollbar-track,.cowinnew-content-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.search-container .searchSection .allstatedistrictdata::-webkit-scrollbar-thumb,
+.vaccine-main-conatiner::-webkit-scrollbar-thumb,.cowinnew-content-container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: var(--navcolor);
+}
+
+/* Handle on hover */
+.search-container .searchSection .allstatedistrictdata::-webkit-scrollbar-thumb:hover,
+.vaccine-main-conatiner::-webkit-scrollbar-thumb:hover,.cowinnew-content-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* .search-container .searchSection .states {
+
+} */
+
+.search-container .searchSection .allstatedistrictdata,
+.search-container .searchSection .allstatedistrict {
+    position: absolute;
+    width: 275px;
+    display: none;
+    z-index: 2;
+    max-height: 200px;
+    visibility: visible;
+    border-radius: 3px;
+    overflow-y: scroll;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px -3px var(--paracolor);
+}
+
+.search-container .searchSection .show {
+    display: block;
+}
+
+.search-container .searchSection .allstatedistrictdata ul,
+.search-container .searchSection .allstatedistrict ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.search-container .searchSection .allstatedistrictdata ul li,
+.search-container .searchSection .allstatedistrict ul li {
+    font-size: .87rem;
+    cursor: pointer;
+    padding: 6px 15px;
+    color: var(--navcolor);
+    margin-bottom: 3px;
+    /* background-color: red; */
+    text-align: start;
+    transition: 0.1s ease all;
+}
+
+.search-container .searchSection .allstatedistrictdata ul li:hover,
+.search-container .searchSection .allstatedistrict ul li:hover {
+    background-color: rgba(198, 197, 197, 0.311);
+}
+
+.search-container .searchSection input[type=submit] {
+    /* width: 275px; */
+    padding: 8px 12px;
+    border: none;
+    outline: none;
+    font-size: .9rem;
+    color: #fff;
+    background-color: var(--navcolor);
+    border-radius: 30px;
+}
+
+.search {
+    grid-template-columns: 1fr;
+    display: grid;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .search-container .searchSection {
+        width: 100%;
+        justify-content: center;
+        margin: 20px auto;
+        grid-template-columns: 280px;
+    }
+}
+
+.formError{
+    margin: 0px;
+    padding: 0px;
+    font-size: .67rem;
+    color: red;
+}
+
+
+
+
+
+.fetchresult {
+    width: 100%;
+}
+
+.fetchresult-container {
+    padding: 0px 10px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.totalfetchresult {
+    /* padding: 0px 10px; */
+    font-size: .82rem;
+    color: var(--navcolor);
+    font-weight: 600;
+    margin: 0px auto;
+    text-align: start;
+}
+
+.totalfetchresult span {
+    font-weight: 500;
+    font-size: .56rem;
+    color: rgb(128, 127, 127);
+}
+
+.filter-container {
+    margin: 0px auto;
+    grid-gap: 15px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 1fr 4fr;
+}
+
+.filter-container span {
+    border-right: 1px solid rgb(214, 214, 214);
+    /* padding: 0px 10px; */
+    text-align: start;
+}
+
+.filter-container span:first-child {
+    display: flex;
+    align-items: end;
+}
+
+.filter-container span:first-child p {
+    font-size: .6rem !important;
+
+}
+
+
+.filter-container span:last-child {
+    border: none;
+}
+
+.filter-container span p {
+    font-weight: 600;
+    margin: 0px;
+    margin-bottom: 3px;
+    font-size: .7rem;
+}
+
+.filter-container span button {
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    font-size: .7rem;
+    padding: 2px 8px;
+    background-color: #fff;
+    border: 1px solid var(--navcolor);
+    color: var(--navcolor);
+}
+
+.vaccine-main-conatiner {
+    box-shadow: 0px 0px 10px -3px grey;
+    /* border: 1px solid red; */
+    max-height: 450px;
+    overflow-y: scroll;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.result-discription {
+    background-color: #f3ffff;
+    margin: 10px 0px;
+    padding: 20px 10px;
+    width: 87%;
+    margin: 15px auto;
+    /* margin-bottom: 20px; */
+    display: flex;
+}
+
+.result-discription span {
+    font-size: 1.2rem;
+    color: var(--navcolor);
+    margin-right: 30px;
+}
+
+.result-discription ul {
+    margin: 0px;
+    padding: 0px;
+    /* list-style-type: none; */
+}
+
+.result-discription ul li {
+    text-align: start;
+    font-size: .73rem;
+}
+
+.result-discription ul li b {
+    letter-spacing: 1;
+    color: var(--navcolor);
+}
+
+.vaccine-container {
+    position: relative;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.vaccine-main-conatiner .vaccine-container .date-container {
+    position: sticky;
+    z-index: 1;
+    top: 0%;
+    font-size: .8rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgb(248, 248, 248);
+
+}
+
+.vaccine-main-conatiner .vaccine-container .date-crousel {
+    grid-column-start: 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    padding: 7px 0px;
+}
+
+.react-multiple-carousel__arrow--left {
+    left: 0% !important;
+}
+
+.react-multiple-carousel__arrow--right {
+    right: 0% !important;
+}
+
+.react-multiple-carousel__arrow {
+    background: inherit !important;
+}
+
+.react-multiple-carousel__arrow::before {
+    color: var(--navcolor) !important;
+}
+
+#date {
+    grid-column-start: 2;
+
+}
+
+.vaccine-main-conatiner .vaccine-container .date-container .react-multi-carousel-item>div {
+    box-shadow: 0px 0px 4px -2px grey;
+    margin: 5px;
+    /* background-color: var(--navcolor); */
+    color: var(--navcolor);
+    border-radius: 5px;
+    padding: 8px;
+    font-weight: 600;
+}
+
+.bookedslot {
+    color: rgb(235, 71, 71);
+}
+
+.slots {
+    margin: 3px;
+    /* background-color: red; */
+    color: var(--navcolor);
+    text-align: center;
+    font-size: .8rem;
+    padding: 3px 6px;
+    font-weight: 500;
+}
+
+.slot {
+    color: rgb(233, 166, 41);
+}
+
+.dosename {
+    font-weight: 400;
+    color: #08a38c;
+}
+
+.vaccine-details {
+    line-height: 1.5;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* border-bottom: 1px solid red; */
+    box-shadow: 0px 0px 4px -2px grey;
+    text-align: start;
+    display: grid;
+    grid-gap: 10px;
+    width: 100%;
+    grid-template-columns: 1fr 2fr;
+    padding: 20px 10px;
+}
+
+.react-multi-carousel-item {
+    text-align: center;
+}
+
+.vaccine-details .react-multiple-carousel__arrow {
+    display: none;
+}
+
+.vaccine-details .vaccine-address {
+    padding-right: 40px;
+}
+
+.vaccine-details .vaccine-address h6 {
+    margin: 0;
+    font-size: .7rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.vaccine-details .vaccine-address p {
+    margin: 3px 0px;
+    font-size: .72rem;
+    font-weight: 300;
+    color: rgb(140, 140, 140);
+}
+
+.vaccine-details .vaccine-address h5 {
+    margin: 0;
+    font-size: .74rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.vaccine-details .vaccine-address h5 span {
+    margin-left: 8px;
+    align-self: center;
+    background-color: rgb(2, 148, 2);
+    color: #fff;
+    border-radius: 3px;
+    font-size: .62rem;
+    padding: 1px 5px;
+}
+
+.vaccine-details .vaccine-address .age {
+    color: rgb(57, 84, 220);
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 500px) {
+    .filter-container {
+        justify-content: center;
+        display: block;
+        text-align: start
+    }
+}
+
+.date-crousel button{
+    display: block !important;
+}
